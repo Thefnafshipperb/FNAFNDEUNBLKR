@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const Unblocker = require('unblocker');
 
 const app = express();
@@ -6,9 +7,8 @@ const unblocker = new Unblocker({ prefix: '/proxy/' });
 
 app.use(unblocker);
 
-app.get('/', (req, res) => {
-  res.send('Node Unblocker is running. Append /proxy/https://example.com to the URL.');
-});
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
