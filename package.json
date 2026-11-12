@@ -1,0 +1,25 @@
+{
+  "name": "fnafndeunblkr",
+  "version": "1.0.0",
+  "description": "just testing, again.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thefnafshipperb/FNAFNDEUNBLKR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Thefnafshipperb/FNAFNDEUNBLKR/issues"
+  },
+  "homepage": "https://github.com/Thefnafshipperb/FNAFNDEUNBLKR#readme",
+  "dependencies": {
+    "express": "^5.3.0",
+    "unblocker": "^2.3.1"
+  }
+}
